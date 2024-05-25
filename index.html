@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-<h1>Hallo Quiz !!!</h1>
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In autem dolor voluptas eaque alias incidunt quas hic. Doloribus tempora quam voluptatibus repellendus necessitatibus voluptates, inventore atque fugit, ratione sint culpa!</p>
-    
-    <div class="card">
-        <div class="card-body">
-          This is some text within a card body.
+<body onload="init()">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid header-backgroundcolor">
+            <a class="navbar-brand " href="#">
+                <img src="/img/Quizapp.png" alt="Logo" class="d-inline-block header-logo align-text-top">
+            </a>
         </div>
-      </div>
-    
-      <button class="btn btn-secondary">Test!</button>
-das hier ist ein <a href="#">Link!</a>
+    </nav>
+    <div class="container">
+        <div class="card card-border" style="width: 18rem;">
+            <img src="/img/woman.jpg" class="card-img-top" alt="...">
+            <div class="card-body card-body-color">
+                <h5 class="card-title">Quiz App</h5>
+                <p class="card-text" id="question-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item border quiz-answer-card card-body-color mt-1 mb-1" id="answer_1"
+                    onclick="answer('answer_1')"></li>
+                <li class="list-group-item border quiz-answer-card card-body-color mb-1" id="answer_2"
+                    onclick="answer('answer_2')"></li>
+                <li class="list-group-item border quiz-answer-card card-body-color mb-1" id="answer_3"
+                    onclick="answer('answer_3')"></li>
+                <li class="list-group-item border quiz-answer-card card-body-color mb-1" id="answer_4"
+                    onclick="answer('answer_4')"></li>
+            </ul>
+            <div class="card-body card-footer card-body-color">
+                <div>
+                    <b>1</b> von <b id="all-questions"></b> Fragen
+                </div>
+                <button class="btn btn-secondary">Nächste</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

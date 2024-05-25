@@ -1,0 +1,47 @@
+body {
+    min-height: 100vh;
+    background-color: rgb(72, 33, 66) !important;
+}
+
+.header-logo {
+    height: 100px;
+}
+
+.card-border {
+    border: 0;
+}
+
+.card-body-color {
+    background-color: rgb(217, 217, 217);
+    border: 0 !important;
+}
+
+.header-backgroundcolor {
+    background-color: rgb(217, 217, 217);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.list-group-flush {
+    background-color: rgb(72, 33, 66);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-answer-card:hover {
+    cursor: pointer;
+    background-color: rgba(205, 204, 204, 0.165);
+}
+
+.bg-success, .bg-danger{
+    color: white;
+}
