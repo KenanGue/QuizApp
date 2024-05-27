@@ -45,3 +45,20 @@ body {
 .bg-success, .bg-danger{
     color: white;
 }
+
+.text-center{
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    
+}
+
+.end-screen-background{
+    background-color:  rgb(72, 33, 66);
+}
+
+.restart-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
